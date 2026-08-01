@@ -15,6 +15,7 @@ import RecommendationCard from "@/components/dashboard/RecommendationCard";
 import CheckInSlider from "@/components/dashboard/CheckInSlider";
 import AdminPanel from "@/components/dashboard/AdminPanel";
 import UserControlPanel from "@/components/dashboard/UserControlPanel";
+import LiveRouteTracker from "@/components/dashboard/LiveRouteTracker";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 
@@ -369,6 +370,11 @@ const Dashboard = () => {
 
           </div>
 
+        </div>
+
+        {/* Live GPS Map Running Tracker */}
+        <div className="w-full">
+          <LiveRouteTracker />
         </div>
 
       </main>
