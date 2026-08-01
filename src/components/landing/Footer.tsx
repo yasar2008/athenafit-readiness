@@ -66,10 +66,12 @@ const Footer = ({ onLinkClick }: FooterProps) => {
           ))}
         </div>
 
-        {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-border/40 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
             © 2026 ATHENAFIT Readiness Intelligence. All rights reserved.
+          </p>
+          <p className="text-xs text-muted-foreground font-serif italic font-semibold tracking-wide">
+            Made by Mifra and Yasar
           </p>
           <div className="flex items-center gap-6">
             {["Twitter", "LinkedIn", "Instagram"].map((social) => (
