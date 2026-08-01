@@ -127,11 +127,11 @@ const LiveRouteTracker = () => {
     if (markerRef.current) map.removeLayer(markerRef.current);
 
     // Set up path line and pulsing marker
-    pathRef.current = L.polyline([], { color: "#10B981", weight: 4, opacity: 0.85 }).addTo(map);
+    pathRef.current = L.polyline([], { color: "#f97316", weight: 4, opacity: 0.85 }).addTo(map);
     markerRef.current = L.circleMarker([0, 0], {
       radius: 7,
-      color: "#0B0F13",
-      fillColor: "#10B981",
+      color: "#07080a",
+      fillColor: "#f97316",
       fillOpacity: 1,
       weight: 2
     }).addTo(map);
@@ -202,13 +202,13 @@ const LiveRouteTracker = () => {
     // Zoom to simulation starting coordinate
     map.setView(SIMULATED_TRACK[0], 15);
 
-    // Create polyline and pulsing marker layers
-    pathRef.current = L.polyline([], { color: "#0ea5e9", weight: 4, opacity: 0.9 }).addTo(map);
+        // Create polyline and pulsing marker layers
+    pathRef.current = L.polyline([], { color: "#facc15", weight: 4, opacity: 0.9 }).addTo(map);
     
     markerRef.current = L.circleMarker(SIMULATED_TRACK[0], {
       radius: 8,
-      color: "#0B0F13",
-      fillColor: "#0ea5e9",
+      color: "#07080a",
+      fillColor: "#facc15",
       fillOpacity: 1,
       weight: 2
     }).addTo(map);

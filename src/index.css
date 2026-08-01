@@ -6,92 +6,92 @@
 
 @layer base {
   :root {
-    /* Premium high-octane athletic palette - Carbon & Neon */
-    --background: 220 25% 6%;
+    /* Premium high-octane athletic palette - Cyber Orange & Obsidian Space Black */
+    --background: 240 12% 4.5%;
     --foreground: 210 20% 98%;
 
-    --card: 220 20% 10%;
+    --card: 240 10% 8%;
     --card-foreground: 210 20% 95%;
 
-    --popover: 220 20% 9%;
+    --popover: 240 12% 4.5%;
     --popover-foreground: 210 20% 95%;
 
-    /* Primary - Electric Neon Green for performance and readiness */
-    --primary: 142 76% 45%;
-    --primary-foreground: 220 25% 6%;
+    /* Primary - Electric Cyber Orange for high performance */
+    --primary: 16 95% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Steel Gray */
-    --secondary: 220 12% 16%;
+    /* Secondary - Charcoal Steel */
+    --secondary: 240 8% 14%;
     --secondary-foreground: 210 20% 90%;
 
-    --muted: 220 12% 14%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 240 8% 10%;
+    --muted-foreground: 240 6% 60%;
 
-    /* Accent - Neon Cyan / Electric Blue */
-    --accent: 217 91% 56%;
-    --accent-foreground: 210 20% 98%;
+    /* Accent - Cyber Yellow / Electric Gold */
+    --accent: 48 96% 53%;
+    --accent-foreground: 240 12% 4.5%;
 
     /* Status colors - bright, energetic */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --success: 142 76% 45%;
-    --success-foreground: 220 25% 6%;
+    --success-foreground: 240 12% 4.5%;
 
     --warning: 32 95% 55%;
     --warning-foreground: 32 95% 10%;
 
-    --info: 199 89% 48%;
-    --info-foreground: 0 0% 100%;
+    --info: 48 96% 53%;
+    --info-foreground: 240 12% 4.5%;
 
     /* Readiness states - energetic glow colors */
-    --ready: 142 76% 45%;
-    --recovery: 199 89% 48%;
+    --ready: 16 95% 55%;
+    --recovery: 48 96% 53%;
     --rest: 271 81% 66%;
     --risk: 0 84% 60%;
 
-    --border: 220 15% 18%;
-    --input: 220 15% 18%;
-    --ring: 142 76% 45%;
+    --border: 240 8% 14%;
+    --input: 240 8% 14%;
+    --ring: 16 95% 55%;
 
     --radius: 0.375rem; /* Sharper corners for a technical feel */
 
     /* High-contrast shadows */
-    --shadow-soft: 0 2px 10px -2px rgba(0, 0, 0, 0.5);
-    --shadow-card: 0 4px 20px -5px rgba(0, 0, 0, 0.7);
-    --shadow-elevated: 0 10px 40px -10px rgba(0, 0, 0, 0.9);
+    --shadow-soft: 0 2px 10px -2px rgba(0, 0, 0, 0.6);
+    --shadow-card: 0 4px 20px -5px rgba(0, 0, 0, 0.8);
+    --shadow-elevated: 0 10px 40px -10px rgba(0, 0, 0, 0.95);
 
     /* Sidebar */
-    --sidebar-background: 220 20% 9%;
+    --sidebar-background: 240 12% 4.5%;
     --sidebar-foreground: 210 20% 90%;
-    --sidebar-primary: 142 76% 45%;
-    --sidebar-primary-foreground: 220 25% 6%;
-    --sidebar-accent: 220 12% 16%;
+    --sidebar-primary: 16 95% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 8% 14%;
     --sidebar-accent-foreground: 210 20% 90%;
-    --sidebar-border: 220 15% 18%;
-    --sidebar-ring: 142 76% 45%;
+    --sidebar-border: 240 8% 14%;
+    --sidebar-ring: 16 95% 55%;
   }
 
   .dark {
     /* Dark is the default for sporty, keep it synced */
-    --background: 220 25% 6%;
+    --background: 240 12% 4.5%;
     --foreground: 210 20% 98%;
 
-    --card: 220 20% 10%;
+    --card: 240 10% 8%;
     --card-foreground: 210 20% 95%;
 
-    --popover: 220 20% 9%;
+    --popover: 240 12% 4.5%;
     --popover-foreground: 210 20% 95%;
 
-    --primary: 142 76% 45%;
-    --primary-foreground: 220 25% 6%;
+    --primary: 16 95% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 12% 16%;
+    --secondary: 240 8% 14%;
     --secondary-foreground: 210 20% 90%;
 
-    --border: 220 15% 18%;
-    --input: 220 15% 18%;
-    --ring: 142 76% 45%;
+    --border: 240 8% 14%;
+    --input: 240 8% 14%;
+    --ring: 16 95% 55%;
   }
 }
 
