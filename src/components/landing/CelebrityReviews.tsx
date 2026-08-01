@@ -1,4 +1,4 @@
-import { Star, Award, Shield, Sparkles } from "lucide-react";
+import { Star, Award, Sparkles } from "lucide-react";
 
 interface Testimonial {
   name: string;
@@ -6,6 +6,7 @@ interface Testimonial {
   quote: string;
   readinessAvg: number;
   tags: string[];
+  image: string;
 }
 
 const testimonials: Testimonial[] = [
@@ -14,28 +15,32 @@ const testimonials: Testimonial[] = [
     role: "Bollywood Icon & Fitness Pioneer",
     quote: "ATHENAFIT's biometric tracking is pure science. It helps me balance heavy action choreography, intense gym sessions, and recovery time. My daily readiness score determines exactly how hard I push on set.",
     readinessAvg: 94,
-    tags: ["Hybrid Training", "CNS Recovery"]
+    tags: ["Hybrid Training", "CNS Recovery"],
+    image: "/athenafit-readiness/hrithik.jpg"
   },
   {
     name: "Virat Kohli",
     role: "Indian Cricket Legend & Elite Athlete",
     quote: "In modern sport, load management is the difference between peak form and injury. ATHENAFIT gives me a clear biometric screenshot every single morning. The HRV analysis is spot on.",
     readinessAvg: 92,
-    tags: ["Athletic Performance", "HRV Logging"]
+    tags: ["Athletic Performance", "HRV Logging"],
+    image: "/athenafit-readiness/virat.jpg"
   },
   {
     name: "Katrina Kaif",
     role: "Fitness Icon & Film Personality",
     quote: "I use the GPS Run Tracker and the simulation sliders to customize my weekly active recovery. It's the first platform that actually details how sleep debt impacts muscle soreness. Incredibly helpful.",
     readinessAvg: 89,
-    tags: ["Functional Conditioning", "Sleep Sync"]
+    tags: ["Functional Conditioning", "Sleep Sync"],
+    image: "/athenafit-readiness/katrina.jpg"
   },
   {
     name: "John Abraham",
     role: "Actor & Strength Specialist",
     quote: "No more guessing if I should load another plate or go home. ATHENAFIT's central nervous system warnings keep me lifting safely. When my score says 50%, I deload. Period.",
     readinessAvg: 96,
-    tags: ["Powerlifting", "Strain Targets"]
+    tags: ["Powerlifting", "Strain Targets"],
+    image: "/athenafit-readiness/john.jpg"
   }
 ];
 
@@ -74,13 +79,20 @@ const CelebrityReviews = () => {
                 
                 {/* Top header details */}
                 <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h4 className="font-serif text-base text-foreground font-bold leading-none">
-                      {t.name}
-                    </h4>
-                    <span className="text-[10px] text-primary font-bold uppercase tracking-wider block mt-1">
-                      {t.role}
-                    </span>
+                  <div className="flex items-center gap-3">
+                    <img 
+                      src={t.image} 
+                      alt={t.name} 
+                      className="w-12 h-12 rounded-full object-cover border-2 border-primary/20 shrink-0 shadow-sm"
+                    />
+                    <div>
+                      <h4 className="font-serif text-base text-foreground font-bold leading-none">
+                        {t.name}
+                      </h4>
+                      <span className="text-[10px] text-primary font-bold uppercase tracking-wider block mt-1">
+                        {t.role}
+                      </span>
+                    </div>
                   </div>
                   
                   {/* Avg readiness indicator */}
