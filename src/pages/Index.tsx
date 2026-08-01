@@ -13,6 +13,7 @@ import CTASection from "@/components/landing/CTASection";
 import Footer from "@/components/landing/Footer";
 import QuickCheckIn from "@/components/dashboard/QuickCheckIn";
 import FooterDialogs from "@/components/landing/FooterDialogs";
+import CelebrityReviews from "@/components/landing/CelebrityReviews";
 
 const Index = () => {
   const [isCheckInOpen, setIsCheckInOpen] = useState(false);
@@ -51,6 +52,8 @@ const Index = () => {
         <div id="insights">
           <PopulationInsights />
         </div>
+
+        <CelebrityReviews />
         
         <div id="science">
           <ScienceSection />
